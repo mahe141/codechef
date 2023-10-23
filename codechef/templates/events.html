@@ -1,0 +1,18 @@
+<center class="card" style="margin-top:20px;margin-left:5px; margin-right:5px; ">
+        <h1>Events</h1>
+        <div class="flex-container">
+            {% for event in events %}
+                <div class="card" style="width: 18rem;margin-bottom:10px;margin-right:10px;">
+                    <img src="/static/image.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Event Name : </b>{{event['Name']}}</h5>
+                        <h5 class="card-title"><b>Event Date : </b>{{event['Date']}}</h5>
+                        <h5 class="card-title"><b>Event Place : </b>{{event['Place']}}</h5>
+                        <p class="card-text"><b>Content : </b>{{event['Content']}}</p>
+                        <a href="#" class="btn btn-primary">Register</a>
+                    </div>
+                </div>
+            {% endfor %}
+            
+        </div>
+</center>
