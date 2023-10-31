@@ -1,0 +1,16 @@
+{% for event in msg %}
+    <tr style="text-align:center; border:1px solid black;">
+        <td style="width: 10%;height:20px;">
+            {{event['username']}}
+        </td>
+        <td style="width: 10%;height:20px;">
+            {{event['total_solved']}}
+        </td>
+        <td style="width: 10%;">
+            {{event['easy_solved']}}
+        </td>
+        <td style="width: 10%;">
+            {{event['medium_solved']}}
+        </td>
+    </tr>
+{% endfor %}
